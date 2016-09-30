@@ -31,9 +31,5 @@
      <linkfile dest="fsl-setup-release.sh" src=".repo/manifests/fsl-setup-release.sh"/>
   </project>
 
-  <project remote="mytest" name="master" path="sources/meta-fsl-bsp-release" revision="imx-4.1.15-1.0.0_ga" >
-     <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
-     <copyfile src="imx/README" dest="README-IMXBSP"/>
-  </project>
 
 </manifest>
