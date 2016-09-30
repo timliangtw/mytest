@@ -27,11 +27,11 @@
   <project remote="OSSystems" revision="b6d46d69a261fe6bd7c1e9811dc2a9bbd0b79aeb" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="d5536e34ec985c82b621448ab4325e5cbba38560" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="mytest" name="mytest" path="sources/meta-fsl-bsp-release">
+  <project remote="mytest" name="mytest" path="sources/meta-fsl-bsp-release" revision="master">
      <linkfile dest="fsl-setup-release.sh" src=".repo/manifests/fsl-setup-release.sh"/>
   </project>
 
-  <project remote="mytest" name="mytest" path="sources/meta-fsl-bsp-release" revision="imx-4.1.15-1.0.0_ga" >
+  <project remote="mytest" name="mytest" path="sources/meta-fsl-bsp-release" revision="master" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
