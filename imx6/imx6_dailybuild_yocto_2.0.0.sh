@@ -227,10 +227,10 @@ function set_environment()
 
         if [ "$1" == "sdk" ]; then
                 # Link downloads directory from backup
-                #if [ -e $CURR_PATH/downloads ] ; then
-                #       echo "[ADV] link downloads directory"
-                #       ln -s $CURR_PATH/downloads downloads
-                #fi
+                if [ -e $CURR_PATH/downloads ] ; then
+                       echo "[ADV] link downloads directory"
+                       ln -s $CURR_PATH/downloads downloads
+                fi
                 # Use RSB-4410 as default device for sdk
                 EULA=1 MACHINE=$DEFAULT_DEVICE source fsl-setup-release.sh -b $BUILDALL_DIR -e $BACKEND_TYPE
         else
