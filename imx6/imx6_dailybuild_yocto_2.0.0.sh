@@ -1,4 +1,5 @@
-#!/bin/bashRAM=$#
+#!/bin/bash
+PARAM=$#
 [ $PARAM -lt 6 ] && echo "ex. ./imx6_dailybuild_yocto_2.0.0.sh rom7420a1 7420A1LIV8010 1G date storage backend-type 8010" && exit 1
 ROOT_DIR=$1_$2
 PRODUCT=$1
