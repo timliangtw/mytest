@@ -39,16 +39,16 @@ echo "[ADV] VERSION_NUM = $VERSION_NUM"
 #imx6_projects
 STORAGE_PATH=${STORED}
 DATE_PATH=${DATE}
-mkdir $STORAGE_PATH/$DATE_PATH
+mkdir -p $STORAGE_PATH/$DATE_PATH
 touch $STORAGE_PATH/$DATE_PATH/test_file
 if [ $U220A1_SOLO ]; then
-	echo 1
+	echo $U220A1_SOLO
 fi
 if [ $DS31A1 ]; then
-	echo 2
+	echo $DS31A1
 fi
 if [ $5420A1 ]; then
-	echo 3
+	echo $5420A1
 fi
 if [ $5420B1_SOLO ]; then
 	echo 4
