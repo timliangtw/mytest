@@ -37,8 +37,8 @@ echo "[ADV] VERSION_NUM = $VERSION_NUM"
 #[x11]
 #imx6_BSP
 #imx6_projects
-STORAGE_PATH = ${STORED}
-DATE_PATH = ${DATE}
+STORAGE_PATH=${STORED}
+DATE_PATH=${DATE}
 mkdir $STORAGE_PATH/$DATE_PATH
 touch $STORAGE_PATH/$DATE_PATH/test_file
 if [ $U220A1_SOLO ]; then
