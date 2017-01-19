@@ -41,40 +41,40 @@ STORAGE_PATH=${STORED}
 DATE_PATH=${DATE}
 mkdir -p $STORAGE_PATH/$DATE_PATH
 touch $STORAGE_PATH/$DATE_PATH/test_file
-if [ $U220A1_SOLO ]; then
-	echo $U220A1_SOLO
+if [ $UBC220A1_SOLO == true ]; then
+	echo 1
 fi
-if [ $DS31A1 ]; then
-	echo $DS31A1
+if [ $UBCDS31A1 == true ]; then
+	echo 2
 fi
-if [ $5420A1 ]; then
-	echo $5420A1
+if [ $ROM5420A1 == true ]; then
+	echo 3
 fi
-if [ $5420B1_SOLO ]; then
+if [ $ROM5420B1_SOLO == true ]; then
 	echo 4
 fi
-if [ $5420B1 ]; then
+if [ $ROM5420B1 == true ]; then
 	echo 5
 fi
-if [ $4410A1 ]; then
+if [ $RSB4410A1 == true ]; then
 	echo 6
 fi
-if [ $4410A2 ]; then
+if [ $RSB4410A2 == true ]; then
 	echo 7
 fi
-if [ $4411A1 ]; then
+if [ $RSB4411A1 == true ]; then
 	echo 8
 fi
-if [ $7420A1 ]; then
+if [ $ROM7420A1 == true ]; then
 	echo 9
 fi
-if [ $3420A1 ]; then
+if [ $ROM3420A1 == true ]; then
 	echo A
 fi
-if [ $7421A1_PLUS ]; then
+if [ $ROM7421A1_PLUS == true ]; then
 	echo B
 fi
-if [ $7421A1_SOLO ]; then
+if [ $ROM7421A1_SOLO == true ]; then
 	echo C
 fi
 
