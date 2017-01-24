@@ -37,5 +37,5 @@ fi
 if [ $ROM7421A1_SOLO == true ]; then
 	MACHINE_LIST="$MACHINE_LIST imx6dlrom7421a1"
 fi
-export $MACHINE_LIST
+export MACHINE_LIST
 ./build.sh
