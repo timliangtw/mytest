@@ -744,6 +744,26 @@ wrap_source_code $KERNEL_URL $VER_TAG linux-imx6
 wrap_source_code $U_BOOT_URL $VER_TAG uboot-imx6
 
 cd $CURR_PATH
+
+# tim test
+
+echo "[ADV] ---------------tim trace show---------------"
+ls 
+echo "[ADV] ---------------tim trace ftp---------------"
+pftp -v -n 172.22.12.82 <<-EOF
+  user "ftpuser" "P@ssw0rd"
+  cd "officialbuild/${FTP_DIR}"
+  mkdir tim_test_keep
+  cd tim_test_keep
+  prompt
+  binary
+  mput $ROOT_DIR
+  close
+  quit
+EOF
+
+
+
 #rm -rf $ROOT_DIR
 
 echo "[ADV] build script done!"
