@@ -56,7 +56,7 @@ fi
 
 # Make mnt folder
 MOUNT_POINT="$CURR_PATH/mnt"
-if [ ! -e $MOUNT_POINT ]; then
+if [ -e $MOUNT_POINT ]; then
 	echo "[ADV] $MOUNT_POINT had already been created"
 else
 	echo "[ADV] mkdir $MOUNT_POINT"
