@@ -599,7 +599,7 @@ function copy_image_to_storage()
 		;;
 		"normal")
 			generate_csv $IMAGE_DIR.img.gz
-			mv ${IMAGE_DIR}.csv $STORAGE_PATH
+			mv ${IMAGE_DIR}.img.csv $STORAGE_PATH
 			mv -f $IMAGE_DIR.img.gz $STORAGE_PATH
 		;;
 		"mfgtools")
@@ -750,19 +750,6 @@ cd $CURR_PATH
 echo "[ADV] ---------------tim trace show---------------"
 ls 
 echo "[ADV] ---------------tim trace ftp---------------"
-pftp -v -n 172.22.12.82 <<-EOF
-  user "ftpuser" "P@ssw0rd"
-  cd "officialbuild/${FTP_DIR}"
-  mkdir tim_test_keep
-  cd tim_test_keep
-  prompt
-  binary
-  mput $ROOT_DIR
-  close
-  quit
-EOF
-
-
 
 #rm -rf $ROOT_DIR
 
